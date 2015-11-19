@@ -2,7 +2,7 @@
 
 A community run listing of events in Helsinki.
 
-## Adding a new jam
+## Adding a new event
 
 Instructions for adding a new event: <https://github.com/jontturi/stadinyt/tree/master/jams#how-to-add-a-new-jam>
 
