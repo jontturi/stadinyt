@@ -1,14 +1,10 @@
-# How to add a new jam
+# How to add a new event
 
-To add a new jam you can submit a pull request with the information of the jam
+To add a new even you can submit a pull request with the information of the jam
 added to one of the `json` files in this directory. Once accepted
 the page will be updated and your jam will be visible.
 
-If you're not familiar with creating a pull request then alternatively you can also open an
-issue on the [issues tracker](https://github.com/leafo/compohub/issues) with
-the jam you want to submit.
-
-If you don't want to use GitHub at all then you can use this Google Form to submit a jam and an administrator will review your submission and create the change for you: <https://docs.google.com/forms/d/1c2UrXfRdJm723fv7kJY0BG7eOCg8nC9eNp-fARe6aqE/viewform>
+If you're not familiar with JSON then you can use this Google Form to submit a jam and an administrator will review your submission and create the change for you: <https://docs.google.com/forms/d/1L2tMc9mWZy62lNrXQsbhQmMF5pLKgfXZoDfF_z0ePKk/viewform>
 
 Jams are organized by their starting year. Choose the `json` file that
 corresponds to the year when your jam starts, if the file doesn't exist yet
@@ -43,7 +39,7 @@ The following fields are required: `name`,  `url`, `start_date`, `end_date`.
 
 
 
-Optionally you can provide the fields `description`, `image`, `tags`, `themes`.
+Optionally you can provide the fields `description` and/or `image`.
 Here's a more complete version of the above example:
 
 **jams/2014.json**
@@ -57,25 +53,10 @@ Here's a more complete version of the above example:
           "url": "http://example.com/my-jam",
           "start_date": "2014-05-04 13:00 -0700",
           "end_date": "2014-05-14 13:00 -0700",
-          "themes": ["cool-things"],
-          "tags": ["leafo-jams"],
           "description": "This is the jam we've been waiting for, I hope you are ready. I know I am!"
         }
       ]
     }
-
-
-### Tags and themes
-
-Tags and themes can be used to categorise your jam. If your jam is part of a
-series then definitely make a tag for that series (even if it's the first one
-of the series). Re-use existing tags whenever possible.
-
-Tags and themes should be written `in-lowercase` and `separated-by-dashes`.
-
-Both tags and themes are JSON arrays, so provide an array of strings (even if
-there is only one tag/theme).
-
 
 ### Date and time format
 
@@ -98,5 +79,4 @@ inclusive range from start to end.
 
 ### Editing an existing jam
 
-Feel free to edit any existing jams, fixing any errors or adding themes after
-they've been announced.
+Feel free to edit any existing jams, and to fix any errors.

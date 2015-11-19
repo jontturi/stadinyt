@@ -245,7 +245,7 @@ build_tag_pages = (params) ->
       options: {
         tag: tag
         jams: jams
-        page_title: "Jams taged '#{tag}'"
+        page_title: "Jams tagged '#{tag}'"
         root: "../.."
       }
 

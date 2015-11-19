@@ -1,7 +1,7 @@
 {
-  "name": "jamhub",
-  "version": "0.0.0",
-  "description": "A community-run listing of game jams.",
+  "name": "stadinyt",
+  "version": "0.5.0",
+  "description": "A community-run listing of events in Helsinki.",
   "scripts": {
     "test": "make"
   },
@@ -22,12 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/leafo/compohub.git"
+    "url": "git://github.com/jontturi/stadinyt.git"
   },
-  "author": "leaf coran",
+  "author": "jonatan noponen, original code by leaf coran",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/leafo/compohub/issues"
+    "url": "https://github.com/jontturi/stadinyt/issues"
   },
-  "homepage": "https://github.com/leafo/compohub"
+  "homepage": "https://github.com/jontturi/stadinyt"
 }

@@ -1,12 +1,10 @@
-# Compohub
+# StadiNyt
 
-[![Build Status](https://travis-ci.org/leafo/compohub.svg?branch=master)](https://travis-ci.org/leafo/compohub)
-
-A community run listing of game jams.
+A community run listing of events in Helsinki.
 
 ## Adding a new jam
 
-Instructions for adding a new jam: <https://github.com/leafo/compohub/tree/master/jams#how-to-add-a-new-jam>
+Instructions for adding a new event: <https://github.com/jontturi/stadinyt/tree/master/jams#how-to-add-a-new-jam>
 
 ## Running locally
 
@@ -34,4 +32,4 @@ main directory then you can view `index.html` in your browser to see the jams.
 ## Issues and bugs
 
 Found something wrong or want to see a new feature? Add an issue to the [issues
-tracker](https://github.com/leafo/compohub/issues).
+tracker](https://github.com/jontturi/stadinyt/issues).
