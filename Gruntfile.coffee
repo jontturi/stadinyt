@@ -29,7 +29,7 @@ module.exports = (grunt) ->
     all_jams: {
       options: {
         root: ".."
-        page_title: "All game jams"
+        page_title: "All events"
       }
       src: "templates/all_jams.hbs"
       dest: "jams/index.html"
@@ -143,8 +143,8 @@ module.exports = (grunt) ->
 
 build_ical_feed = (params) ->
   calendar = ical()
-  calendar.setDomain('compohub.net')
-  calendar.setName('Compohub Game Jams')
+  calendar.setDomain('stadinyt.fi')
+  calendar.setName('StadiNyt Events in Helsinki')
 
   #Get a list of jams in sorted order
   jams = []

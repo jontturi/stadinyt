@@ -195,13 +195,6 @@ class J.Jam
       <% }%>
       <p><%- description %></p>
       <%= time_data %>
-      <% if (tags && tags.length)  {%>
-        <div class="jam_tags">
-          <% _.each(tags, function(tag) {%>
-            <a class="jam_tag" href="tags/<%- J.slugify(tag) %>"><%- tag %></span>
-          <% }) %>
-        </div>
-      <% } %>
     </div>
   """
 
@@ -311,7 +304,7 @@ class J.Jam
     @_end_date
 
   share_message: =>
-    "#{@data.name} - #{@date_format @start_date()} to #{@date_format @end_date()} #compohub"
+    "#{@data.name} - #{@date_format @start_date()} to #{@date_format @end_date()} #stadinyt"
 
 class J.List
   constructor: (el) ->
@@ -326,7 +319,7 @@ class J.List
     jams = @jams.find_in_progress()
     return unless jams.length
 
-    @el.append "<h2>Jams in progress</h2>"
+    @el.append "<h2>Events in progress</h2>"
     jams.sort (a,b) ->
       a_remaining = +new Date() - +a.start_date()
       b_remaining = +new Date() - +b.start_date()
@@ -340,7 +333,7 @@ class J.List
 
     return unless jams.length
 
-    @el.append "<h2>Upcoming</h2>"
+    @el.append "<h2>Upcoming events</h2>"
 
     jams.sort (a,b) ->
       a.start_date() - b.start_date()
