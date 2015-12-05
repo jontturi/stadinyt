@@ -12,11 +12,9 @@ module.exports = (grunt) ->
   require("load-grunt-tasks")(grunt)
 
   jam_files = [
-    "jams/2011.json"
-    "jams/2012.json"
-    "jams/2013.json"
-    "jams/2014.json"
     "jams/2015.json"
+    "jams/2016.json"
+    "jams/2017.json"
   ]
 
   assemble = {
@@ -101,7 +99,7 @@ module.exports = (grunt) ->
     connect: {
       options: {
         port: 9000
-        hostname: "localhost"
+        hostname: "*"
       }
       livereload: {
         options: {
