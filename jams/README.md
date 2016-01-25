@@ -1,10 +1,10 @@
 # How to add a new event
 
-To add a new event you can submit a pull request with the information of the event
+**The easiest way** to submit an event is to use the Google Form: <https://docs.google.com/forms/d/1L2tMc9mWZy62lNrXQsbhQmMF5pLKgfXZoDfF_z0ePKk/viewform>
+
+To add a new event manually you can submit a pull request with the information of the event
 added to one of the `json` files in this directory. Once accepted
 the page will be updated and your event will be visible.
-
-If you're not familiar with JSON then you can use this Google Form to submit an event and an administrator will review your submission and create the change for you: <https://docs.google.com/forms/d/1L2tMc9mWZy62lNrXQsbhQmMF5pLKgfXZoDfF_z0ePKk/viewform>
 
 Events are organized by their starting year. Choose the `json` file that
 corresponds to the year when your event starts, if the file doesn't exist yet
@@ -31,8 +31,8 @@ The following fields are required: `name`,  `url`, `start_date`, `end_date`.
         {
           "name": "My cool event",
           "url": "http://example.com/my-event",
-          "start_date": "2014-05-04 13:00 -0700",
-          "end_date": "2014-05-14 13:00 -0700"
+          "start_date": "2014-05-04 12:00 +0200",
+          "end_date": "2014-05-14 12:00 +0200"
         }
       ]
     }
@@ -51,8 +51,8 @@ Here's a more complete version of the above example:
         {
           "name": "My cool event",
           "url": "http://example.com/my-event",
-          "start_date": "2014-05-04 13:00 -0700",
-          "end_date": "2014-05-14 13:00 -0700",
+          "start_date": "2014-05-04 12:00 +0200",
+          "end_date": "2014-05-14 12:00 +0200",
           "description": "This is the event we've been waiting for, I hope you are ready. I know I am!"
         }
       ]
@@ -68,7 +68,7 @@ end can't be parsed then the event entry is invalid.
     YYYY-MM-DD
 
 
-`Z` means timezone, in the form `+0000`. So PST would be `-0700`. You must
+`Z` means timezone, in the form `+0000`. All StadiNyt events **must** be in the Helsinki metropolitan area, so you must use the timezone `+0200`for wintertime events and `+0300` for Daylight Saving Time events. You must
 provide 2 digits for day, month, or seconds even when they are less than 10. So
 `05` for May, `01` for the first day of the month, etc.
 
@@ -79,4 +79,4 @@ inclusive range from start to end.
 
 ### Editing an existing event
 
-Feel free to edit any existing events, and to fix any errors.
+If you are familiar with JSON and GitHub, feel free to edit any existing events, and to fix any errors.
