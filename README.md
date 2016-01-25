@@ -1,6 +1,6 @@
 # StadiNyt
 
-A community run listing of events in Helsinki.
+A community run listing of events in Helsinki. Tremendous thanks to Leaf Coran.
 
 ## Adding a new event
 
